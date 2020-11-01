@@ -317,6 +317,7 @@ footer .footer-container {
 }
 footer .footer-container .footer-column:nth-child(1) {
   width: 30%;
+  padding: 25px;
 }
 footer .footer-container .footer-column:nth-child(1) .footer-info {
   display: flex;
@@ -487,18 +488,34 @@ footer .footer-container .footer-column:nth-child(4) form input[type='submit'] {
   footer .footer-container {
     flex-flow: column;
   }
+  footer .footer-container .footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer-container .footer-column h1 {
+    padding: 20px 0px;
+  }
+  footer .footer-container .footer-column p {
+    padding: 20px 0px;
+  }
   footer .footer-container .footer-column:nth-child(1) {
     width: 100%;
     text-align: center;
+  }
+  footer .footer-container .footer-column:nth-child(1) .footer-info {
+    margin: 25px 0px;
   }
   footer .footer-container .footer-column:nth-child(2) {
     width: 100%;
   }
   footer .footer-container .footer-column:nth-child(3) {
     width: 100%;
+    text-align: center;
   }
   footer .footer-container .footer-column:nth-child(4) {
     width: 100%;
+    text-align: center;
   }
 }
 #toggle:checked ~ .menu {
