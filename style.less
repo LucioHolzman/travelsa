@@ -15,7 +15,7 @@ header {
     background-image:url('./images/imgheader.jpg');
     background-size:cover;
     background-position: center;
-    padding: 0px 100px;
+    
 
     //menu-nav
 
@@ -131,13 +131,14 @@ header {
 }
 
 .container-countries{
-    padding: 0px 100px;
     margin:60px 0px;
+    
     display: flex;
-    flex-flow: column;
+    justify-content: center;
+    flex-wrap: wrap;
     .title-container-contries{
         background-color:#4E9493;
-        width: 23.5%;
+        width: 50%;
         display: flex;
         flex-flow: row;
         position: relative;
@@ -146,7 +147,7 @@ header {
         border-radius: 15px;
         box-shadow: 6px 6px 6px rgba(74, 55, 55, 0.5);
         margin-bottom:25px;
-        margin-left:20px;
+
         
         h2{
             position: absolute;
@@ -165,13 +166,12 @@ header {
         }
     }
     .card-container-countries{
-        width: 100%;
-        display: flex;
-        flex-flow: row;
+   width: 100%;
+   display: flex;
+
         .card-container{
             width: 25%;
             transition: 2s;
-            margin-left:20px;
             height: 450px;
             background-size: cover;
             background-position: center;
@@ -217,7 +217,7 @@ header {
 }
 
 .country-container{
-    margin:200px 0px;
+    margin:50px 0px;
     position: relative;
     .country-info-container{
         padding:0px 100px;
@@ -235,7 +235,7 @@ header {
         }
         .country-text-container{
             background-color: #ffffff;
-            width: 40%;
+            width: 100%;
             padding: 25px 100px;
             border: 1px solid #9f9f9f;
             h1{
@@ -286,9 +286,6 @@ header {
             text-align: center;
             font-weight: bold;
             font-size: 42px;
-            display: block;
-            margin: 0 auto;
-            width: 400px;
             position: relative;
             
 
@@ -306,27 +303,27 @@ header {
 
     .services-list-container{
         display: flex;
-        flex-flow: row wrap;
+        flex-direction: column;
         width: 100%;
         .service-list{
-            width: 33%;
-            position: relative;
+            padding: 20px 0px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
             img{
                 width:70px;
-                position: absolute;
                 left: 0;
             }
 
             h2{
-                padding-left: 100px;
-                padding-right: 30px;
-                margin-top: 0px;
+               text-align: center;
+               padding: 20px 0px;
             }
 
             p{
-                padding-left: 100px;
-                margin-bottom: 100px;
-                padding-right: 40px;
+                text-align: center;
                 font-size: 15px;
                 font-weight: 400;
             }
@@ -336,25 +333,31 @@ header {
 
 footer{
     background-color: #4E9493;
-    padding:70px 100px;
+    padding: 30px 40px;
     .footer-container{
         width: 100%;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         flex-flow: row;
         color: #ffffff;
         .footer-column:nth-child(1){
-            width: 30%;
-            padding: 25px;
+            width: 25%;
+            padding: 25px 0px;
             .footer-info{
                 display: flex;
                 flex-flow: row;
+                
                 img{
-                    width: 35px;
-                    height: 35px;
-                    margin-right: 10px;
+                    width: 30px;
+                    height: 30px;
+                    filter:invert(100%);
                 }
-                font-size: 15px;
-                font-weight: 400;
+                    font-size: 15px;
+                    font-weight: 400;
+                    padding:20px 0px;
+                
+                
             }
         }
         .footer-column:nth-child(2){
@@ -376,7 +379,7 @@ footer{
             width: 20%;
             ul{
                 list-style-type: none;
-                padding-left: 0px;
+             
                 li{
                     font-size: 16px;
                     margin-bottom:16px;
@@ -390,22 +393,27 @@ footer{
                 font-weight: 400;
             }
                 form{
+
                     display: flex;
                     flex-flow: column;
+                    justify-content: center;
+                    margin: 20px 0px;
                     input[type='text']{
                         border: 1px solid #ffffff;
                         background-color:transparent;
                         padding:15px 15px;
-                        width: 100%;
+                       
                         margin-bottom: 20px;
+                        outline: none;
                     }
                     input[type='submit']{
                         border: 1px solid #ffffff;
-                        width: 100%;
+                        
                         background-color: #ffffff;
                         font-size: 23px;
                         font-weight: 400;
                         padding:15px;
+                        outline: none;
                     }
                 }
         
@@ -482,16 +490,19 @@ footer{
     }
     
     .container-countries{
+        
         .title-container-contries{
-            width: 95%;
+            width: 100%;
             h2{
                 font-size: 20px;
             }
         }
         .card-container-countries{
-            flex-flow: row wrap;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
             .card-container{
-                width: 100%;
+                width: 40%;
                 margin-bottom: 20px;
                 transition: 1s;
             }
@@ -499,16 +510,24 @@ footer{
 
     }
     .country-container{
-        margin: 180px 0px 50px 0px;
+     width: 100%;
+       
         .country-info-container{
             flex-flow:column;
+            padding:0;
             .country-img-container{
                 width: 100%;
+            }
+            h1{
+                padding:5px;
+            }
+            p{
+                padding:20px;
             }
             .country-text-container{
                 width: 100%;
                 padding:29px 0px;
-
+                border:none;
             }
             a{
                 display: flex!important;
@@ -522,9 +541,11 @@ footer{
     }
     .services-container{
         .services-list-container{
+            
             .service-list{
                 width: 100%;
                 p{
+                    
                     padding-right: 0;
                 }
             }
@@ -544,7 +565,6 @@ footer{
             }
         }
         .footer-column:nth-child(1){
-       
             width: 100%;
             text-align: center;
             .footer-info{
@@ -566,6 +586,7 @@ footer{
             
         }
     }
+    
 }
 
 #toggle:checked ~ .menu{
@@ -581,4 +602,27 @@ footer{
     justify-content: center;
     align-items: center;
     flex-flow: column;
+}
+
+@media (max-width: 670px){
+    .container-countries{
+        
+        .title-container-contries{
+            width: 100%;
+            h2{
+                font-size: 20px;
+            }
+        }
+        .card-container-countries{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .card-container{
+                width: 80%;
+                margin-bottom: 20px;
+                transition: 1s;
+            }
+        }
+
+    }
 }

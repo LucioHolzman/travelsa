@@ -11,7 +11,6 @@ header {
   background-image: url('images/imgheader.jpg');
   background-size: cover;
   background-position: center;
-  padding: 0px 100px;
 }
 header nav {
   display: flex;
@@ -114,14 +113,14 @@ header .main-header .main-header-card-ad .main-card-ad .main-card-ad-img img {
   height: 100%;
 }
 .container-countries {
-  padding: 0px 100px;
   margin: 60px 0px;
   display: flex;
-  flex-flow: column;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .container-countries .title-container-contries {
   background-color: #4E9493;
-  width: 23.5%;
+  width: 50%;
   display: flex;
   flex-flow: row;
   position: relative;
@@ -130,7 +129,6 @@ header .main-header .main-header-card-ad .main-card-ad .main-card-ad-img img {
   border-radius: 15px;
   box-shadow: 6px 6px 6px rgba(74, 55, 55, 0.5);
   margin-bottom: 25px;
-  margin-left: 20px;
 }
 .container-countries .title-container-contries h2 {
   position: absolute;
@@ -149,12 +147,10 @@ header .main-header .main-header-card-ad .main-card-ad .main-card-ad-img img {
 .container-countries .card-container-countries {
   width: 100%;
   display: flex;
-  flex-flow: row;
 }
 .container-countries .card-container-countries .card-container {
   width: 25%;
   transition: 2s;
-  margin-left: 20px;
   height: 450px;
   background-size: cover;
   background-position: center;
@@ -196,7 +192,7 @@ header .main-header .main-header-card-ad .main-card-ad .main-card-ad-img img {
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
 .country-container {
-  margin: 200px 0px;
+  margin: 50px 0px;
   position: relative;
 }
 .country-container .country-info-container {
@@ -216,7 +212,7 @@ header .main-header .main-header-card-ad .main-card-ad .main-card-ad-img img {
 }
 .country-container .country-info-container .country-text-container {
   background-color: #ffffff;
-  width: 40%;
+  width: 100%;
   padding: 25px 100px;
   border: 1px solid #9f9f9f;
 }
@@ -265,9 +261,6 @@ header .main-header .main-header-card-ad .main-card-ad .main-card-ad-img img {
   text-align: center;
   font-weight: bold;
   font-size: 42px;
-  display: block;
-  margin: 0 auto;
-  width: 400px;
   position: relative;
 }
 .services-container .services-title h1:after {
@@ -281,54 +274,57 @@ header .main-header .main-header-card-ad .main-card-ad .main-card-ad-img img {
 }
 .services-container .services-list-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
   width: 100%;
 }
 .services-container .services-list-container .service-list {
-  width: 33%;
-  position: relative;
+  padding: 20px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .services-container .services-list-container .service-list img {
   width: 70px;
-  position: absolute;
   left: 0;
 }
 .services-container .services-list-container .service-list h2 {
-  padding-left: 100px;
-  padding-right: 30px;
-  margin-top: 0px;
+  text-align: center;
+  padding: 20px 0px;
 }
 .services-container .services-list-container .service-list p {
-  padding-left: 100px;
-  margin-bottom: 100px;
-  padding-right: 40px;
+  text-align: center;
   font-size: 15px;
   font-weight: 400;
 }
 footer {
   background-color: #4E9493;
-  padding: 70px 100px;
+  padding: 30px 40px;
 }
 footer .footer-container {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-flow: row;
   color: #ffffff;
 }
 footer .footer-container .footer-column:nth-child(1) {
-  width: 30%;
-  padding: 25px;
+  width: 25%;
+  padding: 25px 0px;
 }
 footer .footer-container .footer-column:nth-child(1) .footer-info {
   display: flex;
   flex-flow: row;
   font-size: 15px;
   font-weight: 400;
+  padding: 20px 0px;
 }
 footer .footer-container .footer-column:nth-child(1) .footer-info img {
-  width: 35px;
-  height: 35px;
-  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  filter: invert(100%);
 }
 footer .footer-container .footer-column:nth-child(2) {
   width: 20%;
@@ -349,7 +345,6 @@ footer .footer-container .footer-column:nth-child(3) {
 }
 footer .footer-container .footer-column:nth-child(3) ul {
   list-style-type: none;
-  padding-left: 0px;
 }
 footer .footer-container .footer-column:nth-child(3) ul li {
   font-size: 16px;
@@ -365,21 +360,23 @@ footer .footer-container .footer-column:nth-child(4) h3 {
 footer .footer-container .footer-column:nth-child(4) form {
   display: flex;
   flex-flow: column;
+  justify-content: center;
+  margin: 20px 0px;
 }
 footer .footer-container .footer-column:nth-child(4) form input[type='text'] {
   border: 1px solid #ffffff;
   background-color: transparent;
   padding: 15px 15px;
-  width: 100%;
   margin-bottom: 20px;
+  outline: none;
 }
 footer .footer-container .footer-column:nth-child(4) form input[type='submit'] {
   border: 1px solid #ffffff;
-  width: 100%;
   background-color: #ffffff;
   font-size: 23px;
   font-weight: 400;
   padding: 15px;
+  outline: none;
 }
 #toggle {
   display: none;
@@ -445,31 +442,41 @@ footer .footer-container .footer-column:nth-child(4) form input[type='submit'] {
     display: none;
   }
   .container-countries .title-container-contries {
-    width: 95%;
+    width: 100%;
   }
   .container-countries .title-container-contries h2 {
     font-size: 20px;
   }
   .container-countries .card-container-countries {
-    flex-flow: row wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
   .container-countries .card-container-countries .card-container {
-    width: 100%;
+    width: 40%;
     margin-bottom: 20px;
     transition: 1s;
   }
   .country-container {
-    margin: 180px 0px 50px 0px;
+    width: 100%;
   }
   .country-container .country-info-container {
     flex-flow: column;
+    padding: 0;
   }
   .country-container .country-info-container .country-img-container {
     width: 100%;
   }
+  .country-container .country-info-container h1 {
+    padding: 5px;
+  }
+  .country-container .country-info-container p {
+    padding: 20px;
+  }
   .country-container .country-info-container .country-text-container {
     width: 100%;
     padding: 29px 0px;
+    border: none;
   }
   .country-container .country-info-container a {
     display: flex!important;
@@ -531,4 +538,22 @@ footer .footer-container .footer-column:nth-child(4) form input[type='submit'] {
   justify-content: center;
   align-items: center;
   flex-flow: column;
+}
+@media (max-width: 670px) {
+  .container-countries .title-container-contries {
+    width: 100%;
+  }
+  .container-countries .title-container-contries h2 {
+    font-size: 20px;
+  }
+  .container-countries .card-container-countries {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .container-countries .card-container-countries .card-container {
+    width: 80%;
+    margin-bottom: 20px;
+    transition: 1s;
+  }
 }
